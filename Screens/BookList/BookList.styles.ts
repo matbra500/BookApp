@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   container: {
@@ -16,6 +16,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     marginTop: 20,
+    marginBottom: Platform.OS === 'ios' ? 50 : 5,
   },
   paginationNumber: {
     marginHorizontal: 5,

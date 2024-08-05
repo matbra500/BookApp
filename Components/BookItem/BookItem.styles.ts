@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {Platform, StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   bookContainer: {
@@ -34,7 +34,7 @@ export default StyleSheet.create({
   },
   bookInfo: {
     marginLeft: 10,
-    maxWidth: '80%',
+    maxWidth: Platform.OS === 'ios' ? '70%' : '80%',
   },
   bookTitle: {
     fontSize: 16,

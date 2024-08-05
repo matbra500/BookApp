@@ -7,7 +7,6 @@ export default StyleSheet.create({
   headerTitle: {
     color: 'white',
     fontWeight: '700',
-    fontFamily: 'Montserrat',
   },
   button: {
     borderRadius: 10,
